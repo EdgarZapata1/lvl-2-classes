@@ -1,0 +1,44 @@
+/* Homework styles */
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family: system-ui, sans-serif;
+  background: linear-gradient(135deg, #4ade80, #10b981, #0f172a);
+  height: 100vh;
+  color: #ecfdf5;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.card{
+  background: rgba(15,23,42,0.9);
+  padding:2.3rem;
+  border-radius:1.8rem;
+  border:1px solid rgba(52,211,153,0.5);
+  box-shadow:0 0 0 1px rgba(52,211,153,0.3), 0 30px 50px rgba(0,0,0,0.6);
+  max-width:700px;
+}
+
+.subtitle{
+  margin:1rem 0;
+  color:#bbf7d0;
+}
+
+.instructions{
+  margin-bottom:1rem;
+  color:#d1fae5;
+}
+
+.hint{
+  color:#6ee7b7;
+  border-top:1px dashed rgba(52,211,153,0.4);
+  padding-top:1rem;
+}
+
+code{
+  background:rgba(16,185,129,0.2);
+  padding:3px 6px;
+  border-radius:5px;
+}

@@ -17,7 +17,15 @@
 //
 // STEP 2: Test it 3 times with console.log.
 //         Use labels so it’s clear.
-//
+ function doubleNumber(n) {
+  return n * 2;
+}
+
+const numbers = [5, 10, 15];
+
+numbers.forEach((num, index) => {
+  console.log(`Test ${index + 1}:`, doubleNumber(num));
+});
 // ==============================================
 // TASK 2 – “GUARDRAIL” (IF / ELSE INSIDE A FUNCTION)
 // ==============================================
@@ -30,7 +38,19 @@
 //         - Else, return "Not allowed ❌"
 //
 // STEP 5: Test it with ages like 10, 13, 17.
-//
+function canWatchMovie(age){
+    if(age >= 13){
+        return "Allowed";
+    } else{
+        return "Not allowed";
+    }
+}
+
+console.log(`Test 1: ${canWatchMovie(10)}`)
+console.log(`Test 2: ${canWatchMovie(13)}`)
+console.log(`Test 3: ${canWatchMovie(17)}`)
+
+
 // ==============================================
 // TASK 3 – DEFAULT PARAMETER (OPTIONAL INPUT)
 // ==============================================
@@ -46,7 +66,16 @@
 // STEP 8: Test greet() with:
 //         - greet("Maya")
 //         - greet()   (no argument)
-//
+    function greet(name){
+        if(name === null){
+            name = "friend";
+        } else {
+            console.log(`Hello, ${name}`)
+        }
+    };
+
+    greet("maya");
+    greet();
 // ==============================================
 // TASK 4 – ARROW FUNCTION PRACTICE
 // ==============================================
@@ -56,7 +85,13 @@
 //         It returns a - b
 //
 // STEP 10: console.log subtract with a few tests.
-//
+    const subtract = (a, b) => {
+        return a - b;
+    };
+
+    console.log(`Test subtract 1: ${subtract(5,1)}`)
+    console.log(`Test subtract 2: ${subtract(10,5)}`)
+
 // ==============================================
 // TASK 5 – CALLBACK MINI (FUNCTION AS AN ARGUMENT)
 // ==============================================
@@ -76,7 +111,16 @@
 //
 //  Hint: You can pass arrow functions like:
 // (x, y) => x + y
-//
+    function doMath(numberA, numberB, operation){
+        return operation(numberA, numberB);
+    }
+
+// Add
+console.log("Add:", doMath(10, 5, (x, y) => x + y));
+
+// Multiply
+console.log("Multiply:", doMath(10, 5, (x, y) => x * y));
+
 // ==============================================
 // TASK 6 – “REAL LIFE” MINI: TAX CALCULATOR
 // ==============================================
@@ -95,3 +139,11 @@
 //          addTax(100, 16)
 //          addTax(59.99, 8)
 //
+    function addTax(price, taxRatePercent){
+        const taxRate = taxRatePercent / 100;
+
+        return price + (price * taxRate);
+    }
+
+    console.log(addTax(100, 16));
+    console.log(addTax(59.99, 8));

@@ -26,7 +26,7 @@ if (userAge >= 18){
 //         (hasTicket === true || isMember === true)
 //         - If true, console.log("Entry permitted based on ticket or membership.")
 //         - Else, console.log("No ticket or membership, entry denied.")
-if (hasTicket === true || isMember === false){
+if (hasTicket === true || isMember === true){
     console.log("Entry permitted based on ticket or membership.")
 } else {
     console.log("No ticket or membership, entry denied.")
@@ -36,7 +36,7 @@ if (hasTicket === true || isMember === false){
 //         - userAge >= 18
 //         - AND (hasTicket === true || isMember === true)
 //         all together using && and ||.
-if (userAge >= 18 && hasTicket === true || isMember === false){
+if (userAge >= 18 && hasTicket === true || isMember === true){
 // STEP 7: If both conditions are true, log:
 //         "Access granted. Enjoy the event!"
 console.log("Access granted. Enjoy the event!");

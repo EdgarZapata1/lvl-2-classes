@@ -18,7 +18,17 @@
 //         - The "+1" button (id "incrementBtn")
 //         - The text input (id "previewInput")
 //         - The preview span (id "previewText")
-//
+
+    const mainCardEl = document.getElementById("eventCard");
+    const cardTitleEl = document.getElementById("cardTitle");
+    const cardDescriptionEl = document.getElementById("cardDescription");
+    const changeTitleBtn = document.getElementById("changeTitleBtn");
+    const toggleHighlightBtn = document.getElementById("toggleHighlightBtn");
+    const counter = document.getElementById("counterValue");
+    const incrementBtn = document.getElementById("incrementBtn");
+    const textInput = document.getElementById("textInput");
+    const previewText = document.getElementById("previewText");
+
 // STEP 2: (Optional) console.log some of these variables to make
 //         sure you selected them correctly.
 
@@ -32,7 +42,9 @@
 //           for example "Wave 7 – Events in Action".
 //         - (Optional) Also update the description to mention that
 //           the title was changed by clicking the button.
-
+changeTitleBtn.addEventListener("click", () => {
+    
+})
 // ==============================================
 // TASK 3 – CLICK EVENT: TOGGLE HIGHLIGHT CLASS
 // ==============================================

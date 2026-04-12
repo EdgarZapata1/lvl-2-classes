@@ -77,21 +77,38 @@
     <!-- src="homework.js" -->
     <main class = "page">
       <section class = "card" id = "eventCard">
-        <h1 id = "cardTitle">Dom + Events</h1>
+        <h1 id = "cardTitle">DOM + Events</h1>
         <p id="cardDescription" class="description"> 
-          The DOM (Document Object Model) is a programming interface 
-          that represents an HTML or XML document as a tree of objects.
+          Learn how to react to user clicks and typing using JavaScript events.
+    </p>
         </p>
 
         <div class = "button-row">
-          <button id = "changeTitleBtn" class="btn ghost">Chane Title</button>
+          <button id = "changeTitleBtn" class="btn primary">Change Title</button>
           <button id = "toggleHighlightBtn" class="btn ghost">Toggle Highlight</button>
         </div>
 
         <div class="counter-section">
-          <h2></h2>
+          <h2>Counter</h2>
+          <p>Current count: <span id="counterValue">0</span></p>
+          <button id="incrementBtn" class="btn small">+1</button>
         </div>
+
+        <div class="live-preview-section">
+          <label for="previewInput">Preview Input:</label>
+          <input id="previewInput" type="text">
+
+          <p>  
+            <span id="previewText">Nothing typed yet.</span>
+          </p>
+
+          <p class="hint">
+            Open homework.js and try testing interactions to see how this input behaves.
+          </p>
+        </div>
+        
       </section>
     </main>
+    <script src="homework.js"></script>
   </body>
 </html>
